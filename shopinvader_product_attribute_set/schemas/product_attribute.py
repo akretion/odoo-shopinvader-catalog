@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from enum import Enum
 
+import pydantic
 from extendable_pydantic import StrictExtendableBaseModel
 
 from odoo.addons.product.models.product_product import ProductProduct
@@ -29,7 +30,10 @@ class ProductAttributeType(Enum):
 class ProductAttribute(StrictExtendableBaseModel):
     name: str
     key: str
-    value: str | bool | int | float | list[str]
+    # Use strict types to avoid opinionated conversion of original values
+    value: pydantic.StrictInt | pydantic.StrictStr | pydantic.StrictFloat | bool | list[
+        str
+    ]
     type: ProductAttributeType
 
     @classmethod
