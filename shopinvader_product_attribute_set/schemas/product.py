@@ -12,7 +12,7 @@ from .product_attribute_group import ProductAttributeGroup
 
 class ProductProduct(product.ProductProduct, extends=True):
     attribute_set: ProductAttributeSet | None = None
-    attributes: dict[str, str | bool | int | list[str]] = {}
+    attributes: dict[str, str | bool | int | float | list[str]] = {}
     structured_attributes: list[ProductAttributeGroup] = []
 
     @classmethod
@@ -32,7 +32,7 @@ class ProductProduct(product.ProductProduct, extends=True):
     @classmethod
     def _compute_attributes(
         cls, record: product_product.ProductProduct
-    ) -> dict[str, str | bool | int | list[str]]:
+    ) -> dict[str, str | bool | int | float | list[str]]:
         attributes = {}
         for attr in record.attribute_set_id.attribute_ids:
             # all attr start with "x_" we remove it for the export

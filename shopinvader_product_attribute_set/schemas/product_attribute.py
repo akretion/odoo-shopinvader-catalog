@@ -29,7 +29,7 @@ class ProductAttributeType(Enum):
 class ProductAttribute(StrictExtendableBaseModel):
     name: str
     key: str
-    value: str | bool | int | list[str]
+    value: str | bool | int | float | list[str]
     type: ProductAttributeType
 
     @classmethod
@@ -38,7 +38,7 @@ class ProductAttribute(StrictExtendableBaseModel):
         product: ProductProduct,
         attr: AttributeAttribute,
         string_mode: bool = False,
-    ) -> str | bool | int | list[str]:
+    ) -> str | bool | int | float | list[str]:
         if attr.attribute_type == "select":
             return product[attr.name].display_name or ""
         elif attr.attribute_type == "multiselect":
@@ -47,8 +47,7 @@ class ProductAttribute(StrictExtendableBaseModel):
             return product[attr.name] and "true" or "false"
         elif string_mode or attr.attribute_type in ("char", "text"):
             return "%s" % (product[attr.name] or "")
-        else:
-            return product[attr.name] or ""
+        return product[attr.name] or ""
 
     @classmethod
     def from_product_attribute(

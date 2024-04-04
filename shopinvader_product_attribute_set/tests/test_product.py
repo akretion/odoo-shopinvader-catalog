@@ -224,3 +224,52 @@ class ProductCase(TransactionCase, ExtendableMixin):
                 }
             ],
         )
+
+    def test_product_data_numbers(self):
+        attribute_int = self._create_attribute(
+            {
+                "attribute_type": "integer",
+            }
+        )
+        attribute_float = self._create_attribute(
+            {
+                "attribute_type": "float",
+            }
+        )
+        self.attr_set.attribute_ids = attribute_int | attribute_float
+        self.product.write(
+            {
+                "attribute_set_id": self.attr_set.id,
+                "x_integer": 10,
+                "x_float": 20.0,
+            }
+        )
+        self.reset_extendable_registry()
+        self.init_extendable_registry()
+        res = ProductProduct.from_product_product(self.product).model_dump()
+        self.assertEqual(
+            res.get("attributes"),
+            {"integer": 10, "float": 20.0},
+        )
+        self.assertListEqual(
+            res.get("structured_attributes"),
+            [
+                {
+                    "group_name": "My Group",
+                    "fields": [
+                        {
+                            "value": "10",
+                            "name": "Attribute integer",
+                            "key": "integer",
+                            "type": ProductAttributeType.integer,
+                        },
+                        {
+                            "value": "20.0",
+                            "name": "Attribute float",
+                            "key": "float",
+                            "type": ProductAttributeType.float,
+                        },
+                    ],
+                }
+            ],
+        )
