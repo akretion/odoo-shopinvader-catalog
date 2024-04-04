@@ -24,6 +24,8 @@ class ProductAttributeType(Enum):
     float = "float"
     date = "date"
     datetime = "datetime"
+    # TODO: I'm not sure this value is handled properly
+    # as product[attr.name] will return a b64 string, not a binary.
     binary = "binary"
 
 
