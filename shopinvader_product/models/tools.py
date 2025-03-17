@@ -13,5 +13,5 @@ except ImportError:
 
 
 def sanitize_attr_name(attribute):
-    key = attribute.name
+    key = attribute.with_context(lang="en_US").name
     return unidecode(key.replace(" ", "_").lower())
