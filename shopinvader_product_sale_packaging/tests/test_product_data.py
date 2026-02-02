@@ -14,7 +14,6 @@ from .common import CommonPackagingCase
 
 @tagged("post_install", "-at_install")
 class TestProductPackagingData(ExtendableMixin, CommonPackagingCase, TestCommon):
-
     maxDiff = None
 
     @classmethod

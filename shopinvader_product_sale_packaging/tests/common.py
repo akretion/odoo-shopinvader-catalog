@@ -7,7 +7,7 @@ from odoo.tests.common import TransactionCase
 class CommonPackagingCase(TransactionCase):
     @classmethod
     def setUpClass(cls):
-        super(CommonPackagingCase, cls).setUpClass()
+        super().setUpClass()
         cls.pkg_level_retail_box = cls.env["product.packaging.level"].create(
             {
                 "name": "Retail Box",

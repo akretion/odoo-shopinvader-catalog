@@ -6,7 +6,7 @@ from odoo.tests.common import SavepointCase
 class TestProductAutoBind(SavepointCase):
     @classmethod
     def setUpClass(cls):
-        super(TestProductAutoBind, cls).setUpClass()
+        super().setUpClass()
         cls.backend = cls.env.ref("shopinvader.backend_1").with_context(
             bind_products_immediately=True
         )

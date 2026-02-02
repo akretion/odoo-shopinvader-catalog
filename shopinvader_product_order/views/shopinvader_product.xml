@@ -5,7 +5,6 @@
     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 -->
 <odoo>
-
     <record model="ir.ui.view" id="shopinvader_product_tree_view">
         <field name="model">shopinvader.product</field>
         <field name="inherit_id" ref="shopinvader.shopinvader_product_tree_view" />
@@ -26,5 +25,4 @@
             </group>
         </field>
     </record>
-
 </odoo>

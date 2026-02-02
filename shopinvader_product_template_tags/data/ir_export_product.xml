@@ -5,7 +5,6 @@
     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 -->
 <odoo>
-
     <record id="ir_exp_shopinvader_variant_tags_id" model="ir.exports.line">
         <field name="name">tag_ids/id</field>
         <field name="target">tag_ids:tags/id</field>
@@ -23,5 +22,4 @@
         <field name="target">tag_ids:tags/sequence</field>
         <field name="export_id" ref="shopinvader.ir_exp_shopinvader_variant" />
     </record>
-
 </odoo>

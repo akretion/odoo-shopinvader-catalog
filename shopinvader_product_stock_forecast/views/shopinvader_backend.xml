@@ -20,9 +20,9 @@
                 >
                     <strong>Warning</strong>:
                     The stock forecast is prepared to work best with <code
-                    >qty_available</code> as <strong>Product stock field</strong>.
+                >qty_available</code> as <strong>Product stock field</strong>.
                     <br
-                    />The forecast data may not make sense otherwise. Use at your own risk.
+                />The forecast data may not make sense otherwise. Use at your own risk.
                 </div>
                 <label
                     for="product_stock_forecast_horizon"
