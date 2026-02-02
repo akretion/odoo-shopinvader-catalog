@@ -3,6 +3,8 @@
 
 from odoo.addons.shopinvader_product.schemas.category import (
     ProductCategory as BaseProductCategory,
+)
+from odoo.addons.shopinvader_product.schemas.category import (
     ShortProductCategory as BaseShortProductCategory,
 )
 

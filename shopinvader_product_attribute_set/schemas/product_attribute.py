@@ -33,9 +33,13 @@ class ProductAttribute(StrictExtendableBaseModel):
     name: str
     key: str
     # Use strict types to avoid opinionated conversion of original values
-    value: pydantic.StrictInt | pydantic.StrictStr | pydantic.StrictFloat | bool | list[
-        str
-    ]
+    value: (
+        pydantic.StrictInt
+        | pydantic.StrictStr
+        | pydantic.StrictFloat
+        | bool
+        | list[str]
+    )
     type: ProductAttributeType
 
     @classmethod

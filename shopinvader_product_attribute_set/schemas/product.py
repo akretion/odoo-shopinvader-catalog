@@ -16,9 +16,7 @@ class ProductProduct(product.ProductProduct, extends=True):
     structured_attributes: list[ProductAttributeGroup] = []
 
     @classmethod
-    def from_product_product(
-        cls, odoo_rec: product_product.ProductProduct
-    ) -> self:  # noqa: F821  pylint: disable=undefined-variable
+    def from_product_product(cls, odoo_rec: product_product.ProductProduct) -> self:  # noqa: F821  pylint: disable=undefined-variable
         obj = super().from_product_product(odoo_rec)
         obj.attribute_set = (
             ProductAttributeSet.from_product_attribute_set(odoo_rec.attribute_set_id)
