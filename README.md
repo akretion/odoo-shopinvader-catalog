@@ -34,9 +34,6 @@ addon | version | maintainers | summary
 [shopinvader_product_price_tax](shopinvader_product_price_tax/) | 14.0.1.2.0 (unported) |  | Exposes product prices with and without taxes
 [shopinvader_product_sale_packaging](shopinvader_product_sale_packaging/) | 16.0.1.0.2 (unported) |  | Shopinvader Product Sale Packaging
 [shopinvader_product_seo](shopinvader_product_seo/) | 16.0.1.0.0 (unported) |  | SEO fields for Shopinvader
-[shopinvader_product_stock_assortment](shopinvader_product_stock_assortment/) | 14.0.1.0.2 (unported) |  | This module is used to let the Shopinvader product assortment use the stock context in Shopinvader product stock.
-[shopinvader_product_stock_forecast](shopinvader_product_stock_forecast/) | 14.0.1.0.0 (unported) | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Export Stock Forecast data along with product stocks.
-[shopinvader_product_stock_forecast_expiry](shopinvader_product_stock_forecast_expiry/) | 14.0.1.0.0 (unported) | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Integrates product lot expiration into the forecast
 [shopinvader_product_template_multi_link_date_span](shopinvader_product_template_multi_link_date_span/) | 14.0.1.0.0 (unported) |  | Integrate `product_template_multi_link_date_span` in Shopinvader
 [shopinvader_product_template_tags](shopinvader_product_template_tags/) | 14.0.1.0.0 (unported) |  | Index Product Template Tags in Shopinvader
 [shopinvader_product_url](shopinvader_product_url/) | 16.0.1.0.1 (unported) |  | Generate url for product and category
