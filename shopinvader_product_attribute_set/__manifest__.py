@@ -8,7 +8,7 @@
     "summary": "Expose all PIM' Attribute sets with Shopinvader",
     "version": "16.0.1.0.2",
     "category": "e-commerce",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "author": "Akretion",
     "license": "AGPL-3",
     "application": False,

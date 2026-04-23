@@ -9,7 +9,7 @@
     "version": "16.0.1.0.1",
     "development_status": "Alpha",
     "category": "Shopinvader",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "author": " Akretion, ACSONE SA/NV",
     "license": "AGPL-3",
     "depends": [
@@ -18,4 +18,5 @@
     ],
     "data": [],
     "demo": [],
+    "installable": False,
 }

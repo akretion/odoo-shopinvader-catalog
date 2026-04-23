@@ -10,7 +10,7 @@
     "license": "AGPL-3",
     "summary": "keep history of url for products & categories  ",
     "author": "Akretion, ACSONE SA/NV",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     # any module necessary for this one to work correctly
     "depends": ["base", "base_sparse_field_list_support"],
     "external_dependencies": {"python": ["python-slugify"]},
@@ -20,5 +20,5 @@
         "security/ir.model.access.csv",
     ],
     "url": "",
-    "installable": True,
+    "installable": False,
 }

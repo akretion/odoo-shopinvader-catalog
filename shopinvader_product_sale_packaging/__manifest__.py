@@ -10,7 +10,7 @@
     "version": "16.0.1.0.2",
     "license": "AGPL-3",
     "author": "Camptocamp SA",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "depends": [
         "extendable_fastapi",
         "shopinvader_product",

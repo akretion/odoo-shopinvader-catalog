@@ -7,7 +7,7 @@
     "version": "16.0.1.0.5",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "depends": [
         "base_sparse_field",
         "product",

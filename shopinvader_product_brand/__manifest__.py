@@ -8,11 +8,11 @@
     "summary": "Shopinvader product Brand",
     "version": "16.0.1.0.1",
     "category": "Shopinvader",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "author": " Akretion",
     "license": "AGPL-3",
     "application": False,
-    "installable": True,
+    "installable": False,
     "depends": [
         # OCA
         "product_brand",
