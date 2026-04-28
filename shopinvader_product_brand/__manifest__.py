@@ -15,16 +15,15 @@
     "installable": True,
     "depends": [
         # OCA
+        "base_url",
         "product_brand",
         # Shopinvader
-        "shopinvader_base_url",
         "shopinvader_product",
         "shopinvader_product_seo",
     ],
     "data": [
         "views/product_brand_view.xml",
     ],
-    "demo": [],
     "external_dependencies": {"python": ["extendable_pydantic>=1.2.0"]},
     "development_status": "Alpha",
 }

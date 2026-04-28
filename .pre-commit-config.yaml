@@ -2,10 +2,6 @@ exclude: |
   (?x)
   # NOT INSTALLABLE ADDONS
   ^shopinvader_base_url/|
-  ^shopinvader_product_brand/|
-  ^shopinvader_multi_category/|
-  ^shopinvader_product/|
-  ^shopinvader_product_attribute_set/|
   ^shopinvader_product_brand_tag/|
   ^shopinvader_product_url/|
   # END NOT INSTALLABLE ADDONS
