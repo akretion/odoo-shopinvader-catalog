@@ -14,7 +14,7 @@ class ProductTemplate(models.Model):
     def compute_new_product(self, limit, extra_domain=None):
         new_products = self.search([("new_product", "=", True)])
         new_products.write({"new_product": False})
-        domain = [("shopinvader_bind_ids", "!=", False)]
+        domain = [("channel_ids", "!=", False)]
         if extra_domain is not None:
             domain += extra_domain
         new_products = self.search(domain, limit=limit, order="create_date desc")
