@@ -8,8 +8,8 @@ from odoo.tests.common import TransactionCase
 class TestProductNew(TransactionCase):
     def setUp(self):
         super().setUp()
-        self.backend = self.env.ref("shopinvader.backend_1")
-        self.backend.bind_all_product()
+        self.backend = self.env.ref("sale_channel.sale_channel_amazon")
+        self.env["product.template"].search([]).sale_channel_id = self.backend_id
 
     def test_scheduler_new_product(self):
         self.env["product.template"].compute_new_product(10, extra_domain=[])
@@ -18,7 +18,7 @@ class TestProductNew(TransactionCase):
         product = self.env["product.template"].create(
             {"name": "Test new product", "default_code": "REF-NEW-PRODUCT"}
         )
-        self.backend.bind_all_product()
+        self.env["product.template"].search([]).sale_channel_id = self.backend_id
         self.assertEqual(product.new_product, False)
         self.env["product.template"].compute_new_product(10, extra_domain=[])
         self.assertEqual(product.new_product, True)
