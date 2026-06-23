@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
     <record id="ir_exp_shopinvader_variant_video_sequence" model="ir.exports.line">
         <field name="name">video_ids/sequence</field>
         <field name="target">video_ids:video/sequence</field>
@@ -36,5 +35,4 @@
         <field name="target">video_ids:video/thumbnail_url</field>
         <field name="export_id" ref="shopinvader.ir_exp_shopinvader_variant" />
     </record>
-
 </odoo>

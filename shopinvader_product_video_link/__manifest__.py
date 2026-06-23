@@ -7,7 +7,7 @@
     "summary": "Add video on your Shopinvader website",
     "version": "14.0.1.0.2",
     "category": "Shopinvader",
-    "website": "https://github.com/shopinvader/odoo-shopinvader",
+    "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "author": " Akretion",
     "license": "AGPL-3",
     "application": False,
