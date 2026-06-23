@@ -5,7 +5,7 @@
 {
     "name": "Shopinvader Product Video Link",
     "summary": "Add video on your Shopinvader website",
-    "version": "14.0.1.0.2",
+    "version": "18.0.1.0.0",
     "category": "Shopinvader",
     "website": "https://github.com/shopinvader/odoo-shopinvader-catalog",
     "author": " Akretion",
@@ -17,12 +17,9 @@
         "bin": [],
     },
     "depends": [
-        "shopinvader",
+        "shopinvader_product",
         "product_video_link",
     ],
-    "data": [
-        "data/ir_export_product.xml",
-        "data/ir_export_category.xml",
-    ],
+    "data": [],
     "demo": [],
 }
